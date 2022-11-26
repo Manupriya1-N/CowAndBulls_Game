@@ -1,0 +1,494 @@
+/* style for game Bulls and Cows
+   JavaScript
+   by Shevchenko Alexey IT6 2013 */
+   
+body, html {
+	padding: 0;
+	margin: 0;
+	background: #0097d6 url(images/bg_body.jpg) no-repeat 50% 0;
+	}
+	
+#content {
+	padding: 0;
+	margin: 0 auto;
+	width: 668px;
+	float:center;
+	position: relative;
+	}
+
+/* === menu === */
+	
+#menu {
+	padding: 27px 0 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	width: 668px;
+	z-index: 500;
+	}
+	
+#menu  ul {
+	margin: 0 ;
+	padding: 0 0 0 130px;
+	height: 59px;
+	width: 668px;
+	}
+	
+.menu  li {
+	font-family: Arial, Verdana, sans-serif;
+	list-style-type:none;
+	float: left;
+	font-size:12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 59px;
+	margin: 0 20px;
+	text-align: center;
+	width: 161px;
+	}
+
+.menu  li a:link, .menu  li a:visited {
+	margin: 0;
+	padding: 24px 20px;
+	color: #0097d6;
+	text-decoration: none;
+	background: url(images/bg_menu.png) no-repeat top left;
+	width: 121px;
+	display:block; 
+	}
+	
+.menu li a:hover {
+	margin: 0;
+	padding: 24px 20px;
+	color: #fdfdf1;
+	text-decoration: none;
+	background: url(images/bg_menu.png) no-repeat top right;
+	width: 121px;
+	display:block;
+	}
+	
+/* === workarea === */
+#workarea {
+	padding: 0;
+	margin: 24px auto 0;
+	float: center;
+	position: relative;
+	width: 668px;
+	height: 420px;
+	background: url(images/bg_workarea.jpg) repeat-y;
+	}
+	
+#target {
+	padding: 380px 0 0;
+	margin: 0px auto 0;
+	float: center;
+	position: relative;
+	width: 668px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+	}
+
+#description {
+	padding: 0 93px;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 482px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+
+	
+.try_number {
+	color: #ffbe06;
+	font-size: 36px;
+	width: 26px;
+	background-color: #0c8c3c;
+	border: 0;
+	text-align: center;
+	}
+	
+.try_number6 {
+	color: #ffbe06;
+	font-size: 36px;
+	width: 26px;
+	background-color: #ff0036;
+	border: 0;
+	text-align: center;
+	}
+	
+.checked_button {
+	color: #FFFFFF;
+	width: 30px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #ff9600;
+	font-size: 16px;
+	height: 30px;
+	border: 0;
+	border-radius: 15px;
+	-moz-border-radius:15px 15px 15px 15px;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	}
+
+#column {
+	padding: 0 0 0 93px;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 141px;
+	text-align: center;
+	}
+	
+#textid {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	GGGGdisplay: none;
+	}
+	
+#textid1 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#textid2 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#textid3 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#textid4 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#textid5 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#textid6 {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	display: none;
+	}
+	
+#b_c_column {
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+#b_c_result	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	}	
+	
+#b_c_result_b	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b1	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c1	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b2	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c2	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b3	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c3	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b4	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c4	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b5	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c5	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_b6	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+#b_c_result_c6	{
+	padding: 0;
+	margin: 0px auto 0;
+	float: left;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+
+	
+#footer {
+	padding: 40px 0 0;
+	margin: 0px auto 0;
+	float: center;
+	position: relative;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+	width: 668px;
+	height: 78px;
+	background: url(images/bg_footer.jpg) no-repeat;
+	}	
+
+#Wrapp, #Wrapp2 {
+	top:0;
+	left:0;
+	position:fixed;
+	background-color:#000;
+	width:100%;
+	height:100%;
+	z-index:10000;
+	background-color:#444444;
+	GGGGopacity: 0.74;
+
+}
+
+
+#tt {
+	position:relative;
+	background-color:#fff;
+	width:440px;
+	padding:12px;
+	height:500px;
+	margin:100px auto auto auto;
+	background: url(images/rules.jpg) no-repeat;
+	font-family: Arial, Verdana, sans-serif;
+	opacity: 1.00;
+	padding: 150px 30px 30px 30px;
+	color: #FFFFFF;
+}
+
+#tt2 {
+	position:relative;
+	background-color:#fff;
+	width:440px;
+	padding:12px;
+	height:500px;
+	margin:100px auto auto auto;
+	background: url(images/about.jpg) no-repeat;
+	font-family: Arial, Verdana, sans-serif;
+	opacity: 1.00;
+	padding: 150px 30px 30px 30px;
+	color: #FFFFFF;
+}
+
+div.close {
+  cursor:pointer;
+  position:absolute;
+  font-weight:700;
+  text-shadow:#000 1px 1px 0;
+  color:red;
+  right:7px;
+  top:2px;
+}
+	
+<div id="workarea">
+				<div id="target">Отгадай число!</div>
+			
+				<div id="description">
+					<div class="column">попытка №</div>
+					<div class="column">
+						<div class="b_c_column">Б</div>
+						<div class="b_c_column">К</div>
+					</div>
+				</div>
+			
+			</div>
+			<div id="footer">	
+	
